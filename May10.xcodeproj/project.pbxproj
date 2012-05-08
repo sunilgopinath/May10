@@ -13,6 +13,13 @@
 		0FFA200E155557ED0084CC30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FFA200C155557ED0084CC30 /* InfoPlist.strings */; };
 		0FFA2010155557ED0084CC30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA200F155557ED0084CC30 /* main.m */; };
 		0FFA2014155557ED0084CC30 /* May10AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA2013155557ED0084CC30 /* May10AppDelegate.m */; };
+		0FFA201C155560B10084CC30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA201B155560B10084CC30 /* ViewController.m */; };
+		0FFA201F155563410084CC30 /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA201E155563410084CC30 /* View.m */; };
+		0FFA2024155565A50084CC30 /* bronx.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFA2020155565A50084CC30 /* bronx.png */; };
+		0FFA2025155565A50084CC30 /* brooklyn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFA2021155565A50084CC30 /* brooklyn.png */; };
+		0FFA2026155565A50084CC30 /* manhattan.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFA2022155565A50084CC30 /* manhattan.png */; };
+		0FFA2027155565A50084CC30 /* queens.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFA2023155565A50084CC30 /* queens.png */; };
+		0FFA203915556B930084CC30 /* moneyorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFA203815556B930084CC30 /* moneyorder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,15 @@
 		0FFA2011155557ED0084CC30 /* May10-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "May10-Prefix.pch"; sourceTree = "<group>"; };
 		0FFA2012155557ED0084CC30 /* May10AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = May10AppDelegate.h; sourceTree = "<group>"; };
 		0FFA2013155557ED0084CC30 /* May10AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = May10AppDelegate.m; sourceTree = "<group>"; };
+		0FFA201A155560B10084CC30 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0FFA201B155560B10084CC30 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0FFA201D155563410084CC30 /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		0FFA201E155563410084CC30 /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
+		0FFA2020155565A50084CC30 /* bronx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bronx.png; path = ../bronx.png; sourceTree = "<group>"; };
+		0FFA2021155565A50084CC30 /* brooklyn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brooklyn.png; path = ../brooklyn.png; sourceTree = "<group>"; };
+		0FFA2022155565A50084CC30 /* manhattan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = manhattan.png; path = ../manhattan.png; sourceTree = "<group>"; };
+		0FFA2023155565A50084CC30 /* queens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = queens.png; path = ../queens.png; sourceTree = "<group>"; };
+		0FFA203815556B930084CC30 /* moneyorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moneyorder.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +88,13 @@
 		0FFA2009155557ED0084CC30 /* May10 */ = {
 			isa = PBXGroup;
 			children = (
+				0FFA203815556B930084CC30 /* moneyorder.png */,
 				0FFA2012155557ED0084CC30 /* May10AppDelegate.h */,
 				0FFA2013155557ED0084CC30 /* May10AppDelegate.m */,
+				0FFA201A155560B10084CC30 /* ViewController.h */,
+				0FFA201B155560B10084CC30 /* ViewController.m */,
+				0FFA201D155563410084CC30 /* View.h */,
+				0FFA201E155563410084CC30 /* View.m */,
 				0FFA200A155557ED0084CC30 /* Supporting Files */,
 			);
 			path = May10;
@@ -82,6 +103,10 @@
 		0FFA200A155557ED0084CC30 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0FFA2020155565A50084CC30 /* bronx.png */,
+				0FFA2021155565A50084CC30 /* brooklyn.png */,
+				0FFA2022155565A50084CC30 /* manhattan.png */,
+				0FFA2023155565A50084CC30 /* queens.png */,
 				0FFA200B155557ED0084CC30 /* May10-Info.plist */,
 				0FFA200C155557ED0084CC30 /* InfoPlist.strings */,
 				0FFA200F155557ED0084CC30 /* main.m */,
@@ -142,6 +167,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FFA200E155557ED0084CC30 /* InfoPlist.strings in Resources */,
+				0FFA2024155565A50084CC30 /* bronx.png in Resources */,
+				0FFA2025155565A50084CC30 /* brooklyn.png in Resources */,
+				0FFA2026155565A50084CC30 /* manhattan.png in Resources */,
+				0FFA2027155565A50084CC30 /* queens.png in Resources */,
+				0FFA203915556B930084CC30 /* moneyorder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +184,8 @@
 			files = (
 				0FFA2010155557ED0084CC30 /* main.m in Sources */,
 				0FFA2014155557ED0084CC30 /* May10AppDelegate.m in Sources */,
+				0FFA201C155560B10084CC30 /* ViewController.m in Sources */,
+				0FFA201F155563410084CC30 /* View.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

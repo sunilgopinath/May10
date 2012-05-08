@@ -1,0 +1,5 @@
+TAB BAR CONTROLLER ANSWERS
+
+4. No. Apple says not to do something like this: Note: You should not use view controllers to manage views that fill only a part of their window—that is, only part of the area defined by the application content rectangle. If you want to have an interface composed of several smaller views, embed them all in a single root view and manage that view with your view controller.
+
+5. Yes, we could. This will give us a template to use tab view controllers.

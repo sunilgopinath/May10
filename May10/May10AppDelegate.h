@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface May10AppDelegate : UIResponder <UIApplicationDelegate>
+@interface May10AppDelegate :  UIResponder <UIApplicationDelegate> {
+	UIWindow *_window;
+	NSArray *names;
+	NSMutableArray *visited;
+}
 
-@property (strong, nonatomic) UIWindow *window;
-
-@end
+- (void) nextStation;
+@property (strong, nonatomic) UIWindow *window;@end
