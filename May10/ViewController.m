@@ -34,8 +34,8 @@
         [NSString stringWithFormat: @"Welcome to %@.", self.title];
         UIApplication *application = [UIApplication sharedApplication];
         May10AppDelegate *applicationDelegate = application.delegate;
-        NSInteger visitedCount = applicationDelegate->visited.count;
-        NSInteger namesCount = applicationDelegate->names.count;
+        NSInteger visitedCount = applicationDelegate.visited.count;
+        NSInteger namesCount = applicationDelegate.names.count;
         NSLog(@"visited = %d, count = %d", visitedCount, namesCount);
         if(visitedCount != namesCount - 1) {
             self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle: @"Go North"

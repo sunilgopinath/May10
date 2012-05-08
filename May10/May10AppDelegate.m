@@ -12,7 +12,8 @@
 @implementation May10AppDelegate
 
 @synthesize window = _window;
-
+@synthesize names = names;
+@synthesize visited;
 
 - (BOOL) application: (UIApplication *) application didFinishLaunchingWithOptions: (NSDictionary *) launchOptions
 {
