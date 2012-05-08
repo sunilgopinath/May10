@@ -68,7 +68,7 @@
     
 	self.window.rootViewController =
     [[UINavigationController alloc] initWithRootViewController: [visited objectAtIndex: 0]];
-    
+    ((UINavigationController *)self.window.rootViewController).toolbarHidden = NO;
 	[self.window makeKeyAndVisible];
     
     

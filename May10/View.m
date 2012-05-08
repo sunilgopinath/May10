@@ -41,10 +41,6 @@
 }
 
 
-- (void) touchesEnded: (NSSet *) touches withEvent: (UIEvent *) event {
-	[viewController nextStation];
-}
-
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
