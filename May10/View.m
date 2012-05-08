@@ -27,7 +27,12 @@
 	self = [super initWithFrame: frame];
 	if (self) {
 		// Initialization code
-		self.backgroundColor = [UIColor whiteColor];
+		self.backgroundColor =
+        [UIColor colorWithRed: (CGFloat)rand() / RAND_MAX
+                        green: (CGFloat)rand() / RAND_MAX
+                         blue: 1.0
+                        alpha: 1.0
+         ];
 		self.font = [UIFont fontWithName: @"Courier" size: 16];
 		self.editable = NO;
 		viewController = c;
@@ -59,5 +64,4 @@
                      ];
 	}
 }
-
 @end

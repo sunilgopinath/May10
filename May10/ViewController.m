@@ -11,7 +11,7 @@
 #import "View.h"
 
 @implementation ViewController
-@synthesize text;
+
 
 /*
  - (id) initWithNibName: (NSString *) nibNameOrNil bundle: (NSBundle *) nibBundleOrNil
@@ -24,11 +24,27 @@
  }
  */
 
+
 - (id) initWithTitle: (NSString *) title {
 	self = [super initWithNibName: nil bundle: nil];
 	if (self != nil) {
 		// Custom initialization
 		self.title = title;
+        self.navigationItem.prompt =
+        [NSString stringWithFormat: @"Welcome to %@.", self.title];
+        UIApplication *application = [UIApplication sharedApplication];
+        May10AppDelegate *applicationDelegate = application.delegate;
+        NSInteger visitedCount = applicationDelegate->visited.count;
+        NSInteger namesCount = applicationDelegate->names.count;
+        NSLog(@"visited = %d, count = %d", visitedCount, namesCount);
+        if(visitedCount != namesCount - 1) {
+            self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle: @"Go North"
+                                                                                      style: UIBarButtonItemStylePlain
+                                                                                     target: self
+                                                                                     action: @selector(nextStation)
+                                                      ];
+        }
+
 	}
 	return self;
 }
@@ -39,12 +55,13 @@
 	[applicationDelegate nextStation];
 }
 
+
 - (void) didReceiveMemoryWarning
 {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
+	// Releases the view if it doesn't have a superview.
+	[super didReceiveMemoryWarning];
     
-    // Release any cached data, images, etc that aren't in use.
+	// Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
@@ -58,12 +75,13 @@
 }
 
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void) viewDidLoad
-{
-	[super viewDidLoad];
-}
-
+/*
+ // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+ - (void) viewDidLoad
+ {
+ [super viewDidLoad];
+ }
+ */
 
 - (void) viewDidUnload
 {

@@ -9,10 +9,9 @@
 #import <UIKit/UIKit.h>
 @class ViewController;
 
-@interface View : UITextView {
+@interface View: UITextView {
 	ViewController *viewController;
 }
 
 - (id) initWithFrame: (CGRect) frame controller: (ViewController *) c;
-
 @end

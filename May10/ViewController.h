@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class May10AppDelegate;
 
-@interface ViewController : UIViewController
+@interface ViewController: UIViewController
 
 - (id) initWithTitle: (NSString *) title;
 - (void) nextStation;
-@property (nonatomic, copy) IBOutlet NSString *text;
+
 @end
