@@ -14,11 +14,13 @@
 @end
 
 @implementation ModalViewController
+
 - (id) initWithNibName: (NSString *) nibNameOrNil bundle: (NSBundle *) nibBundleOrNil
 {
 	self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
 	if (self) {
 		// Custom initialization
+        self.modalTransitionStyle = UIModalTransitionStylePartialCurl;
 	}
 	return self;
 }
