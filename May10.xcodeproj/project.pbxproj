@@ -7,22 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F72D43E1558C1F800ED228A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F72D43D1558C1F800ED228A /* MainViewController.m */; };
+		0FEDF4561559FBEE00C32B03 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF4551559FBEE00C32B03 /* MainView.m */; };
+		0FEDF45A155A00DC00C32B03 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF459155A00DC00C32B03 /* ModalViewController.m */; };
+		0FEDF45D155A017700C32B03 /* ModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF45C155A017700C32B03 /* ModalView.m */; };
 		0FFA2004155557ED0084CC30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFA2003155557ED0084CC30 /* UIKit.framework */; };
 		0FFA2006155557ED0084CC30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFA2005155557ED0084CC30 /* Foundation.framework */; };
 		0FFA2008155557ED0084CC30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFA2007155557ED0084CC30 /* CoreGraphics.framework */; };
 		0FFA200E155557ED0084CC30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FFA200C155557ED0084CC30 /* InfoPlist.strings */; };
 		0FFA2010155557ED0084CC30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA200F155557ED0084CC30 /* main.m */; };
 		0FFA2014155557ED0084CC30 /* May10AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA2013155557ED0084CC30 /* May10AppDelegate.m */; };
-		0FFA201C155560B10084CC30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA201B155560B10084CC30 /* ViewController.m */; };
-		0FFA201F155563410084CC30 /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA201E155563410084CC30 /* View.m */; };
-		0FFA2024155565A50084CC30 /* bronx.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFA2020155565A50084CC30 /* bronx.png */; };
-		0FFA2025155565A50084CC30 /* brooklyn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFA2021155565A50084CC30 /* brooklyn.png */; };
-		0FFA2026155565A50084CC30 /* manhattan.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFA2022155565A50084CC30 /* manhattan.png */; };
-		0FFA2027155565A50084CC30 /* queens.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFA2023155565A50084CC30 /* queens.png */; };
-		0FFA203915556B930084CC30 /* moneyorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFA203815556B930084CC30 /* moneyorder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F72D43C1558C1F800ED228A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0F72D43D1558C1F800ED228A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0FEDF4541559FBEE00C32B03 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		0FEDF4551559FBEE00C32B03 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		0FEDF458155A00DC00C32B03 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		0FEDF459155A00DC00C32B03 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		0FEDF45B155A017700C32B03 /* ModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalView.h; sourceTree = "<group>"; };
+		0FEDF45C155A017700C32B03 /* ModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalView.m; sourceTree = "<group>"; };
 		0FFA1FFF155557ED0084CC30 /* May10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = May10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFA2003155557ED0084CC30 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0FFA2005155557ED0084CC30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -33,15 +38,6 @@
 		0FFA2011155557ED0084CC30 /* May10-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "May10-Prefix.pch"; sourceTree = "<group>"; };
 		0FFA2012155557ED0084CC30 /* May10AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = May10AppDelegate.h; sourceTree = "<group>"; };
 		0FFA2013155557ED0084CC30 /* May10AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = May10AppDelegate.m; sourceTree = "<group>"; };
-		0FFA201A155560B10084CC30 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0FFA201B155560B10084CC30 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0FFA201D155563410084CC30 /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
-		0FFA201E155563410084CC30 /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
-		0FFA2020155565A50084CC30 /* bronx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bronx.png; path = ../bronx.png; sourceTree = "<group>"; };
-		0FFA2021155565A50084CC30 /* brooklyn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brooklyn.png; path = ../brooklyn.png; sourceTree = "<group>"; };
-		0FFA2022155565A50084CC30 /* manhattan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = manhattan.png; path = ../manhattan.png; sourceTree = "<group>"; };
-		0FFA2023155565A50084CC30 /* queens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = queens.png; path = ../queens.png; sourceTree = "<group>"; };
-		0FFA203815556B930084CC30 /* moneyorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moneyorder.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +84,16 @@
 		0FFA2009155557ED0084CC30 /* May10 */ = {
 			isa = PBXGroup;
 			children = (
-				0FFA203815556B930084CC30 /* moneyorder.png */,
 				0FFA2012155557ED0084CC30 /* May10AppDelegate.h */,
 				0FFA2013155557ED0084CC30 /* May10AppDelegate.m */,
-				0FFA201A155560B10084CC30 /* ViewController.h */,
-				0FFA201B155560B10084CC30 /* ViewController.m */,
-				0FFA201D155563410084CC30 /* View.h */,
-				0FFA201E155563410084CC30 /* View.m */,
+				0F72D43C1558C1F800ED228A /* MainViewController.h */,
+				0F72D43D1558C1F800ED228A /* MainViewController.m */,
+				0FEDF4541559FBEE00C32B03 /* MainView.h */,
+				0FEDF4551559FBEE00C32B03 /* MainView.m */,
+				0FEDF458155A00DC00C32B03 /* ModalViewController.h */,
+				0FEDF459155A00DC00C32B03 /* ModalViewController.m */,
+				0FEDF45B155A017700C32B03 /* ModalView.h */,
+				0FEDF45C155A017700C32B03 /* ModalView.m */,
 				0FFA200A155557ED0084CC30 /* Supporting Files */,
 			);
 			path = May10;
@@ -103,10 +102,6 @@
 		0FFA200A155557ED0084CC30 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0FFA2020155565A50084CC30 /* bronx.png */,
-				0FFA2021155565A50084CC30 /* brooklyn.png */,
-				0FFA2022155565A50084CC30 /* manhattan.png */,
-				0FFA2023155565A50084CC30 /* queens.png */,
 				0FFA200B155557ED0084CC30 /* May10-Info.plist */,
 				0FFA200C155557ED0084CC30 /* InfoPlist.strings */,
 				0FFA200F155557ED0084CC30 /* main.m */,
@@ -167,11 +162,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FFA200E155557ED0084CC30 /* InfoPlist.strings in Resources */,
-				0FFA2024155565A50084CC30 /* bronx.png in Resources */,
-				0FFA2025155565A50084CC30 /* brooklyn.png in Resources */,
-				0FFA2026155565A50084CC30 /* manhattan.png in Resources */,
-				0FFA2027155565A50084CC30 /* queens.png in Resources */,
-				0FFA203915556B930084CC30 /* moneyorder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,8 +174,10 @@
 			files = (
 				0FFA2010155557ED0084CC30 /* main.m in Sources */,
 				0FFA2014155557ED0084CC30 /* May10AppDelegate.m in Sources */,
-				0FFA201C155560B10084CC30 /* ViewController.m in Sources */,
-				0FFA201F155563410084CC30 /* View.m in Sources */,
+				0F72D43E1558C1F800ED228A /* MainViewController.m in Sources */,
+				0FEDF4561559FBEE00C32B03 /* MainView.m in Sources */,
+				0FEDF45A155A00DC00C32B03 /* ModalViewController.m in Sources */,
+				0FEDF45D155A017700C32B03 /* ModalView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +281,7 @@
 				0FFA2019155557ED0084CC30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
