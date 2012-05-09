@@ -51,6 +51,23 @@
 }
 
 /*
+ - (id) initWithFrame: (CGRect) frame
+ {
+ self = [super initWithFrame: frame];
+ if (self) {
+ // Initialization code
+ }
+ return self;
+ }
+ */
+
+- (void) layoutSubviews {
+	//Put the origin of the StationView at the center of the StationView.
+	CGSize s = self.bounds.size;
+	self.bounds = CGRectMake(-s.width / 2, -s.height / 2, s.width, s.height);
+}
+
+/*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect

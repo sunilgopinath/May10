@@ -30,7 +30,7 @@
     
 	information = [NSDictionary dictionaryWithObjectsAndKeys:
                    @"Transfer for A, C, E.",                 @"8th Avenue",
-                   @"Transfer for B, D, F, M, 1, 2, 3.",     @"6th Avenue",
+                   @"Transfer for F, M, 1, 2, 3.",           @"6th Avenue",
                    @"Transfer for N, Q, R, 4, 5, 6.",        @"Union Square",
                    @"No transfers.",                         @"3rd Avenue",
                    @"First Avenue has an uptown bike lane.", @"1st Avenue",
