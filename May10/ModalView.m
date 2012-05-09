@@ -35,9 +35,6 @@
 	return self;
 }
 
-- (void) touchesBegan: (NSSet *) touches withEvent: (UIEvent *) event {
-	[modalViewController dismissModalViewController];
-}
 
 /*
 // Only override drawRect: if you perform custom drawing.

@@ -20,7 +20,11 @@
 	self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
 	if (self) {
 		// Custom initialization
-        self.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+        self.navigationItem.rightBarButtonItem =
+        [[UIBarButtonItem alloc] initWithTitle: @"Done"
+                                         style: UIBarButtonItemStyleDone
+                                        target: self
+                                        action: @selector(dismissModalViewController)];
 	}
 	return self;
 }

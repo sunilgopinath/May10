@@ -28,7 +28,10 @@
 	ModalViewController *modalViewController =
     [[ModalViewController alloc] initWithNibName: nil bundle: nil];
     
-	[self presentModalViewController: modalViewController animated: YES];
+	UINavigationController *navigationController =
+    [[UINavigationController alloc] initWithRootViewController: modalViewController];
+    
+	[self presentModalViewController: navigationController animated: YES];
 }
 
 
