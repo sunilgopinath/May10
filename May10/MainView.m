@@ -28,7 +28,7 @@
 		// Initialization code
 		self.backgroundColor = [UIColor whiteColor];
 		self.textAlignment = UITextAlignmentCenter;
-		self.text = @"MainView";
+		self.text = NSStringFromClass([self class]);
 		self.userInteractionEnabled = YES; //Make it touch-sensitive.
 		mainViewController = c;
 	}

@@ -28,7 +28,7 @@
 		// Initialization code
 		self.backgroundColor = [UIColor orangeColor];
 		self.textAlignment = UITextAlignmentCenter;
-		self.text = @"ModalView";
+		self.text = NSStringFromClass([self class]);
 		self.userInteractionEnabled = YES;
 		modalViewController = c;
 	}

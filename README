@@ -7,3 +7,5 @@ TAB BAR CONTROLLER ANSWERS
 ModalViewController
 
 self.modalTransitionStyle = UIModalTransitionStylePartialCurl; is the iPad google maps thing.
+
+getting the class name is [self class]
