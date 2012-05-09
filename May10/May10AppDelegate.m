@@ -29,35 +29,35 @@
                                         [[MovieViewController alloc]
                                          initWithText: @"Test your week's Movie Knowledge!"	//apostophe, not prime
                                          title: @"Movies"
-                                         image: [UIImage imageNamed: @"thumb_small_movie.png"]
+                                         image: [UIImage imageNamed: @"movies.png"]
                                          badge: nil
                                          ],
                                         
                                         [[MusicViewController alloc]
                                          initWithText: @"How much about this week's music do you know?"
                                          title: @"Music"
-                                         image: [UIImage imageNamed: @"brooklyn.png"]
+                                         image: [UIImage imageNamed: @"music.png"]
                                          badge: nil
                                          ],
                                         
                                         [[TVViewController alloc]
                                          initWithText: @"Have you been watching tv?"
                                          title: @"TV"
-                                         image: [UIImage imageNamed: @"manhattan.png"]
-                                         badge: @"4,5,6"
+                                         image: [UIImage imageNamed: @"tv.png"]
+                                         badge: nil
                                          ],
                                         
                                         [[BookViewController alloc]
                                          initWithText: @"What about a good book? On an eReader of course!"
                                          title: @"Books"
-                                         image: [UIImage imageNamed: @"queens.png"]
-                                         badge: @"E"
+                                         image: [UIImage imageNamed: @"book.png"]
+                                         badge: nil
                                          ],
                                         
                                         [[TheatreViewController alloc]
                                          initWithText: @"There's more to art than Broadway"
                                          title: @"Theatre"
-                                         image: [UIImage imageNamed: @"statenisland.png"]
+                                         image: [UIImage imageNamed: @"theatre.png"]
                                          badge: nil
                                          ],
                                         

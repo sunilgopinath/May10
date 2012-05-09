@@ -14,7 +14,11 @@
 		0F89B27F155AC59B001754A8 /* TheatreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B27E155AC59B001754A8 /* TheatreView.m */; };
 		0F89B282155AC7DD001754A8 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B281155AC7DD001754A8 /* BookViewController.m */; };
 		0F89B285155AC85E001754A8 /* BookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B284155AC85E001754A8 /* BookView.m */; };
-		0F89B289155ACA30001754A8 /* thumb_small_movie.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F89B288155ACA30001754A8 /* thumb_small_movie.png */; };
+		0F89B28D155ACB71001754A8 /* movies.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F89B28C155ACB71001754A8 /* movies.png */; };
+		0F89B28F155ACBA5001754A8 /* tv.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F89B28E155ACBA5001754A8 /* tv.png */; };
+		0F89B291155ACBDA001754A8 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F89B290155ACBDA001754A8 /* music.png */; };
+		0F89B293155ACC12001754A8 /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F89B292155ACC12001754A8 /* book.png */; };
+		0F89B299155ACD24001754A8 /* theatre.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F89B298155ACD24001754A8 /* theatre.png */; };
 		0FEDF46C155A125300C32B03 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF46B155A125300C32B03 /* QuizViewController.m */; };
 		0FEDF46F155A12E500C32B03 /* MovieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF46E155A12E500C32B03 /* MovieView.m */; };
 		0FEDF472155A13FB00C32B03 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF471155A13FB00C32B03 /* MovieViewController.m */; };
@@ -42,7 +46,11 @@
 		0F89B281155AC7DD001754A8 /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
 		0F89B283155AC85E001754A8 /* BookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookView.h; sourceTree = "<group>"; };
 		0F89B284155AC85E001754A8 /* BookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookView.m; sourceTree = "<group>"; };
-		0F89B288155ACA30001754A8 /* thumb_small_movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb_small_movie.png; sourceTree = SOURCE_ROOT; };
+		0F89B28C155ACB71001754A8 /* movies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movies.png; sourceTree = SOURCE_ROOT; };
+		0F89B28E155ACBA5001754A8 /* tv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tv.png; sourceTree = SOURCE_ROOT; };
+		0F89B290155ACBDA001754A8 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = SOURCE_ROOT; };
+		0F89B292155ACC12001754A8 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = SOURCE_ROOT; };
+		0F89B298155ACD24001754A8 /* theatre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theatre.png; sourceTree = SOURCE_ROOT; };
 		0FEDF46A155A125300C32B03 /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
 		0FEDF46B155A125300C32B03 /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
 		0FEDF46D155A12E500C32B03 /* MovieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieView.h; sourceTree = "<group>"; };
@@ -131,7 +139,6 @@
 				0F89B27E155AC59B001754A8 /* TheatreView.m */,
 				0F89B283155AC85E001754A8 /* BookView.h */,
 				0F89B284155AC85E001754A8 /* BookView.m */,
-				0F89B288155ACA30001754A8 /* thumb_small_movie.png */,
 				0FFA200A155557ED0084CC30 /* Supporting Files */,
 			);
 			path = May10;
@@ -140,6 +147,11 @@
 		0FFA200A155557ED0084CC30 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0F89B298155ACD24001754A8 /* theatre.png */,
+				0F89B292155ACC12001754A8 /* book.png */,
+				0F89B290155ACBDA001754A8 /* music.png */,
+				0F89B28E155ACBA5001754A8 /* tv.png */,
+				0F89B28C155ACB71001754A8 /* movies.png */,
 				0FFA200B155557ED0084CC30 /* May10-Info.plist */,
 				0FFA200C155557ED0084CC30 /* InfoPlist.strings */,
 				0FFA200F155557ED0084CC30 /* main.m */,
@@ -200,7 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FFA200E155557ED0084CC30 /* InfoPlist.strings in Resources */,
-				0F89B289155ACA30001754A8 /* thumb_small_movie.png in Resources */,
+				0F89B28D155ACB71001754A8 /* movies.png in Resources */,
+				0F89B28F155ACBA5001754A8 /* tv.png in Resources */,
+				0F89B291155ACBDA001754A8 /* music.png in Resources */,
+				0F89B293155ACC12001754A8 /* book.png in Resources */,
+				0F89B299155ACD24001754A8 /* theatre.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
