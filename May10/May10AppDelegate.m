@@ -7,107 +7,106 @@
 //
 
 #import "May10AppDelegate.h"
-#import "StationViewController.h"
+#import "QuizViewController.h"
+#import "MovieViewController.h"
+#import "MusicViewController.h"
+#import "TVViewController.h"
+#import "BookViewController.h"
+#import "TheatreViewController.h"
 
 @implementation May10AppDelegate
 
 @synthesize window = _window;
-@synthesize names;
-@synthesize information;
 
 - (BOOL) application: (UIApplication *) application didFinishLaunchingWithOptions: (NSDictionary *) launchOptions
 {
-	// Override point for customization after application launch
-	names = [NSArray arrayWithObjects:
-             @"8th Avenue",
-             @"6th Avenue",
-             @"Union Square",
-             @"3rd Avenue",
-             @"1st Avenue",
-             @"Bedford Avenue",
-             nil
-             ];
-    
-	information = [NSDictionary dictionaryWithObjectsAndKeys:
-                   @"Transfer for A, C, E.",                 @"8th Avenue",
-                   @"Transfer for F, M, 1, 2, 3.",           @"6th Avenue",
-                   @"Transfer for N, Q, R, 4, 5, 6.",        @"Union Square",
-                   @"No transfers.",                         @"3rd Avenue",
-                   @"First Avenue has an uptown bike lane.", @"1st Avenue",
-                   @"Only the dead know Brooklyn.",		  @"Bedford Avenue",
-                   nil
-                   ];
-    
-	StationViewController *firstController =
-    [[StationViewController alloc] initWithTitle: [names objectAtIndex: 0]];
-    
 	self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
 	// Override point for customization after application launch.
+	UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
-	self.window.rootViewController =
-    [[UINavigationController alloc] initWithRootViewController: firstController];
+	tabBarController.viewControllers = [NSArray arrayWithObjects:
+                                        
+                                        [[MovieViewController alloc]
+                                         initWithText: @"Test your week's Movie Knowledge!"	//apostophe, not prime
+                                         title: @"Movies"
+                                         image: [UIImage imageNamed: @"thumb_small_movie.png"]
+                                         badge: nil
+                                         ],
+                                        
+                                        [[MusicViewController alloc]
+                                         initWithText: @"How much about this week's music do you know?"
+                                         title: @"Music"
+                                         image: [UIImage imageNamed: @"brooklyn.png"]
+                                         badge: nil
+                                         ],
+                                        
+                                        [[TVViewController alloc]
+                                         initWithText: @"Have you been watching tv?"
+                                         title: @"TV"
+                                         image: [UIImage imageNamed: @"manhattan.png"]
+                                         badge: @"4,5,6"
+                                         ],
+                                        
+                                        [[BookViewController alloc]
+                                         initWithText: @"What about a good book? On an eReader of course!"
+                                         title: @"Books"
+                                         image: [UIImage imageNamed: @"queens.png"]
+                                         badge: @"E"
+                                         ],
+                                        
+                                        [[TheatreViewController alloc]
+                                         initWithText: @"There's more to art than Broadway"
+                                         title: @"Theatre"
+                                         image: [UIImage imageNamed: @"statenisland.png"]
+                                         badge: nil
+                                         ],
+                                        
+                                        nil
+                                        ];
     
-	visited = [NSMutableArray arrayWithObject: firstController];
+	tabBarController.selectedIndex = 0;	//0 (the leftmost one) is the default
+	self.window.rootViewController = tabBarController;
 	[self.window makeKeyAndVisible];
 	return YES;
 }
 
-- (void) nextStation {
-	UINavigationController *navigationController =
-    (UINavigationController *)self.window.rootViewController;
-    
-	NSUInteger i = navigationController.viewControllers.count;
-	if (i == names.count) {
-		//We are currently visiting the last station, and can go no further.
-		return;
-	}
-    
-	if (visited.count <= i) {
-		//This station is being visited for the first time.
-		[visited addObject:
-         [[StationViewController alloc] initWithTitle: [names objectAtIndex: i]]
-         ];
-	}
-    
-	[navigationController pushViewController: [visited objectAtIndex: i] animated: YES];
-}
-
 - (void) applicationWillResignActive: (UIApplication *) application
 {
-    /*
-     Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-     Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-     */
+	/*
+	 Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+	 Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+	 */
 }
 
 - (void) applicationDidEnterBackground: (UIApplication *) application
 {
-    /*
-     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-     If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-     */
+	/*
+	 Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+	 If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+	 */
 }
 
 - (void) applicationWillEnterForeground: (UIApplication *) application
 {
-    /*
-     Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-     */
+	/*
+	 Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+	 */
 }
 
 - (void) applicationDidBecomeActive: (UIApplication *) application
 {
-    /*
-     Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-     */
+	/*
+	 Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+	 */
 }
 
 - (void) applicationWillTerminate: (UIApplication *) application
 {
-    /*
-     Called when the application is about to terminate.
-     Save data if appropriate.
-     See also applicationDidEnterBackground:.
-     */
+	/*
+	 Called when the application is about to terminate.
+	 Save data if appropriate.
+	 See also applicationDidEnterBackground:.
+	 */
 }
+
 @end

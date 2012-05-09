@@ -1,16 +1,18 @@
 //
-//  InfoViewController.m
+//  TheatreViewController.m
 //  May10
 //
-//  Created by Sunil Gopinath on 5/8/12.
+//  Created by Sunil Gopinath on 5/9/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "InfoViewController.h"
-#import "InfoView.h"
+#import "TheatreViewController.h"
+#import "TheatreView.h"
 
-@implementation InfoViewController
 
+@implementation TheatreViewController
+
+@synthesize text;
 /*
  - (id) initWithNibName: (NSString *) nibNameOrNil bundle: (NSBundle *) nibBundleOrNil
  {
@@ -22,26 +24,23 @@
  }
  */
 
-- (id) initWithTitle: (NSString *) title information: (NSString *) i {
+
+- (id) initWithText: (NSString *) t
+              title: (NSString *) title
+              image: (UIImage *) image
+              badge: (NSString *) badge {
+    
 	self = [super initWithNibName: nil bundle: nil];
-	if (self) {
-		// Custom initialization
+	if (self != nil) {
 		self.title = title;
-		
-		self.navigationItem.rightBarButtonItem =
-		[[UIBarButtonItem alloc] initWithTitle: @"Done"
-                                         style: UIBarButtonItemStylePlain
-                                        target: self
-                                        action: @selector(done)
-         ];
-		information = i;
+		self.tabBarItem.image = image;
+		self.tabBarItem.badgeValue = badge;
+		self.text = t;		//text = [t copy];
 	}
+	
 	return self;
 }
 
-- (void) done {
-	[self dismissModalViewControllerAnimated: YES];
-}
 
 - (void) didReceiveMemoryWarning
 {
@@ -58,17 +57,16 @@
 - (void) loadView
 {
 	CGRect frame = [UIScreen mainScreen].applicationFrame;
-	self.view = [[InfoView alloc] initWithFrame: frame information: information];
+	self.view = [[TheatreView alloc] initWithFrame: frame controller: self];
 }
 
 
-/*
- // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
- - (void) viewDidLoad
- {
- [super viewDidLoad];
- }
- */
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void) viewDidLoad
+{
+	[super viewDidLoad];
+}
+
 
 - (void) viewDidUnload
 {

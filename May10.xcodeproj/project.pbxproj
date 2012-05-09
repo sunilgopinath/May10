@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FEDF460155A0ADE00C32B03 /* StationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF45F155A0ADE00C32B03 /* StationViewController.m */; };
-		0FEDF463155A0B5E00C32B03 /* StationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF462155A0B5E00C32B03 /* StationView.m */; };
-		0FEDF466155A0BA000C32B03 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF465155A0BA000C32B03 /* InfoViewController.m */; };
-		0FEDF469155A0BF300C32B03 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF468155A0BF300C32B03 /* InfoView.m */; };
+		0F89B272155AB654001754A8 /* MusicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B271155AB654001754A8 /* MusicView.m */; };
+		0F89B276155AC440001754A8 /* TVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B275155AC440001754A8 /* TVViewController.m */; };
+		0F89B279155AC4A4001754A8 /* TVView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B278155AC4A4001754A8 /* TVView.m */; };
+		0F89B27C155AC53E001754A8 /* TheatreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B27B155AC53E001754A8 /* TheatreViewController.m */; };
+		0F89B27F155AC59B001754A8 /* TheatreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B27E155AC59B001754A8 /* TheatreView.m */; };
+		0F89B282155AC7DD001754A8 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B281155AC7DD001754A8 /* BookViewController.m */; };
+		0F89B285155AC85E001754A8 /* BookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B284155AC85E001754A8 /* BookView.m */; };
+		0F89B289155ACA30001754A8 /* thumb_small_movie.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F89B288155ACA30001754A8 /* thumb_small_movie.png */; };
+		0FEDF46C155A125300C32B03 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF46B155A125300C32B03 /* QuizViewController.m */; };
+		0FEDF46F155A12E500C32B03 /* MovieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF46E155A12E500C32B03 /* MovieView.m */; };
+		0FEDF472155A13FB00C32B03 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF471155A13FB00C32B03 /* MovieViewController.m */; };
+		0FEDF475155A1B4D00C32B03 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF474155A1B4D00C32B03 /* MusicViewController.m */; };
 		0FFA2004155557ED0084CC30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFA2003155557ED0084CC30 /* UIKit.framework */; };
 		0FFA2006155557ED0084CC30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFA2005155557ED0084CC30 /* Foundation.framework */; };
 		0FFA2008155557ED0084CC30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFA2007155557ED0084CC30 /* CoreGraphics.framework */; };
@@ -20,14 +28,29 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0FEDF45E155A0ADE00C32B03 /* StationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationViewController.h; sourceTree = "<group>"; };
-		0FEDF45F155A0ADE00C32B03 /* StationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationViewController.m; sourceTree = "<group>"; };
-		0FEDF461155A0B5E00C32B03 /* StationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationView.h; sourceTree = "<group>"; };
-		0FEDF462155A0B5E00C32B03 /* StationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationView.m; sourceTree = "<group>"; };
-		0FEDF464155A0BA000C32B03 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
-		0FEDF465155A0BA000C32B03 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
-		0FEDF467155A0BF300C32B03 /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoView.h; sourceTree = "<group>"; };
-		0FEDF468155A0BF300C32B03 /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoView.m; sourceTree = "<group>"; };
+		0F89B270155AB654001754A8 /* MusicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicView.h; sourceTree = "<group>"; };
+		0F89B271155AB654001754A8 /* MusicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicView.m; sourceTree = "<group>"; };
+		0F89B274155AC440001754A8 /* TVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVViewController.h; sourceTree = "<group>"; };
+		0F89B275155AC440001754A8 /* TVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVViewController.m; sourceTree = "<group>"; };
+		0F89B277155AC4A4001754A8 /* TVView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVView.h; sourceTree = "<group>"; };
+		0F89B278155AC4A4001754A8 /* TVView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVView.m; sourceTree = "<group>"; };
+		0F89B27A155AC53E001754A8 /* TheatreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheatreViewController.h; sourceTree = "<group>"; };
+		0F89B27B155AC53E001754A8 /* TheatreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreViewController.m; sourceTree = "<group>"; };
+		0F89B27D155AC59B001754A8 /* TheatreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheatreView.h; sourceTree = "<group>"; };
+		0F89B27E155AC59B001754A8 /* TheatreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreView.m; sourceTree = "<group>"; };
+		0F89B280155AC7DD001754A8 /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		0F89B281155AC7DD001754A8 /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
+		0F89B283155AC85E001754A8 /* BookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookView.h; sourceTree = "<group>"; };
+		0F89B284155AC85E001754A8 /* BookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookView.m; sourceTree = "<group>"; };
+		0F89B288155ACA30001754A8 /* thumb_small_movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb_small_movie.png; sourceTree = SOURCE_ROOT; };
+		0FEDF46A155A125300C32B03 /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
+		0FEDF46B155A125300C32B03 /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		0FEDF46D155A12E500C32B03 /* MovieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieView.h; sourceTree = "<group>"; };
+		0FEDF46E155A12E500C32B03 /* MovieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieView.m; sourceTree = "<group>"; };
+		0FEDF470155A13FB00C32B03 /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		0FEDF471155A13FB00C32B03 /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
+		0FEDF473155A1B4D00C32B03 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		0FEDF474155A1B4D00C32B03 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
 		0FFA1FFF155557ED0084CC30 /* May10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = May10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFA2003155557ED0084CC30 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0FFA2005155557ED0084CC30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,14 +109,29 @@
 			children = (
 				0FFA2012155557ED0084CC30 /* May10AppDelegate.h */,
 				0FFA2013155557ED0084CC30 /* May10AppDelegate.m */,
-				0FEDF45E155A0ADE00C32B03 /* StationViewController.h */,
-				0FEDF45F155A0ADE00C32B03 /* StationViewController.m */,
-				0FEDF461155A0B5E00C32B03 /* StationView.h */,
-				0FEDF462155A0B5E00C32B03 /* StationView.m */,
-				0FEDF464155A0BA000C32B03 /* InfoViewController.h */,
-				0FEDF465155A0BA000C32B03 /* InfoViewController.m */,
-				0FEDF467155A0BF300C32B03 /* InfoView.h */,
-				0FEDF468155A0BF300C32B03 /* InfoView.m */,
+				0FEDF46A155A125300C32B03 /* QuizViewController.h */,
+				0FEDF46B155A125300C32B03 /* QuizViewController.m */,
+				0FEDF470155A13FB00C32B03 /* MovieViewController.h */,
+				0FEDF471155A13FB00C32B03 /* MovieViewController.m */,
+				0FEDF473155A1B4D00C32B03 /* MusicViewController.h */,
+				0FEDF474155A1B4D00C32B03 /* MusicViewController.m */,
+				0F89B274155AC440001754A8 /* TVViewController.h */,
+				0F89B275155AC440001754A8 /* TVViewController.m */,
+				0F89B280155AC7DD001754A8 /* BookViewController.h */,
+				0F89B281155AC7DD001754A8 /* BookViewController.m */,
+				0F89B27A155AC53E001754A8 /* TheatreViewController.h */,
+				0F89B27B155AC53E001754A8 /* TheatreViewController.m */,
+				0FEDF46D155A12E500C32B03 /* MovieView.h */,
+				0FEDF46E155A12E500C32B03 /* MovieView.m */,
+				0F89B270155AB654001754A8 /* MusicView.h */,
+				0F89B271155AB654001754A8 /* MusicView.m */,
+				0F89B277155AC4A4001754A8 /* TVView.h */,
+				0F89B278155AC4A4001754A8 /* TVView.m */,
+				0F89B27D155AC59B001754A8 /* TheatreView.h */,
+				0F89B27E155AC59B001754A8 /* TheatreView.m */,
+				0F89B283155AC85E001754A8 /* BookView.h */,
+				0F89B284155AC85E001754A8 /* BookView.m */,
+				0F89B288155ACA30001754A8 /* thumb_small_movie.png */,
 				0FFA200A155557ED0084CC30 /* Supporting Files */,
 			);
 			path = May10;
@@ -162,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FFA200E155557ED0084CC30 /* InfoPlist.strings in Resources */,
+				0F89B289155ACA30001754A8 /* thumb_small_movie.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,10 +213,17 @@
 			files = (
 				0FFA2010155557ED0084CC30 /* main.m in Sources */,
 				0FFA2014155557ED0084CC30 /* May10AppDelegate.m in Sources */,
-				0FEDF460155A0ADE00C32B03 /* StationViewController.m in Sources */,
-				0FEDF463155A0B5E00C32B03 /* StationView.m in Sources */,
-				0FEDF466155A0BA000C32B03 /* InfoViewController.m in Sources */,
-				0FEDF469155A0BF300C32B03 /* InfoView.m in Sources */,
+				0FEDF46C155A125300C32B03 /* QuizViewController.m in Sources */,
+				0FEDF46F155A12E500C32B03 /* MovieView.m in Sources */,
+				0FEDF472155A13FB00C32B03 /* MovieViewController.m in Sources */,
+				0FEDF475155A1B4D00C32B03 /* MusicViewController.m in Sources */,
+				0F89B272155AB654001754A8 /* MusicView.m in Sources */,
+				0F89B276155AC440001754A8 /* TVViewController.m in Sources */,
+				0F89B279155AC4A4001754A8 /* TVView.m in Sources */,
+				0F89B27C155AC53E001754A8 /* TheatreViewController.m in Sources */,
+				0F89B27F155AC59B001754A8 /* TheatreView.m in Sources */,
+				0F89B282155AC7DD001754A8 /* BookViewController.m in Sources */,
+				0F89B285155AC85E001754A8 /* BookView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
