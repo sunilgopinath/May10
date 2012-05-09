@@ -9,9 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface May10AppDelegate: UIResponder <UIApplicationDelegate> {
+	NSArray *names;
+	NSDictionary *information;
+	NSMutableArray *visited;
 	UIWindow *_window;
 }
 
 @property (strong, nonatomic) UIWindow *window;
+
+//StationViewController objects read these two properties:
+@property (strong, nonatomic) NSArray *names;
+@property (strong, nonatomic) NSDictionary *information;
 
 @end

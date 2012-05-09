@@ -1,17 +1,15 @@
 //
-//  MainViewController.m
+//  InfoViewController.m
 //  May10
 //
-//  Created by Sunil Gopinath on 5/7/12.
+//  Created by Sunil Gopinath on 5/8/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "MainViewController.h"
-#import "MainView.h"
-#import "ModalViewController.h"
+#import "InfoViewController.h"
+#import "InfoView.h"
 
-@implementation MainViewController
-
+@implementation InfoViewController
 
 /*
  - (id) initWithNibName: (NSString *) nibNameOrNil bundle: (NSBundle *) nibBundleOrNil
@@ -24,23 +22,33 @@
  }
  */
 
-- (void) presentModalViewController {
-	ModalViewController *modalViewController =
-    [[ModalViewController alloc] initWithNibName: nil bundle: nil];
-    
-	UINavigationController *navigationController =
-    [[UINavigationController alloc] initWithRootViewController: modalViewController];
-    
-	[self presentModalViewController: navigationController animated: YES];
+- (id) initWithTitle: (NSString *) title information: (NSString *) i {
+	self = [super initWithNibName: nil bundle: nil];
+	if (self) {
+		// Custom initialization
+		self.title = title;
+		
+		self.navigationItem.rightBarButtonItem =
+		[[UIBarButtonItem alloc] initWithTitle: @"Done"
+                                         style: UIBarButtonItemStylePlain
+                                        target: self
+                                        action: @selector(done)
+         ];
+		information = i;
+	}
+	return self;
 }
 
+- (void) done {
+	[self dismissModalViewControllerAnimated: YES];
+}
 
 - (void) didReceiveMemoryWarning
 {
-	// Releases the view if it doesn't have a superview.
-	[super didReceiveMemoryWarning];
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
     
-	// Release any cached data, images, etc that aren't in use.
+    // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
@@ -50,7 +58,7 @@
 - (void) loadView
 {
 	CGRect frame = [UIScreen mainScreen].applicationFrame;
-	self.view = [[MainView alloc] initWithFrame: frame controller: self];
+	self.view = [[InfoView alloc] initWithFrame: frame information: information];
 }
 
 
@@ -75,6 +83,5 @@
 	//return (interfaceOrientation == UIInterfaceOrientationPortrait);
 	return YES;
 }
-
 
 @end

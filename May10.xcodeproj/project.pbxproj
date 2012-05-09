@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F72D43E1558C1F800ED228A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F72D43D1558C1F800ED228A /* MainViewController.m */; };
-		0FEDF4561559FBEE00C32B03 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF4551559FBEE00C32B03 /* MainView.m */; };
-		0FEDF45A155A00DC00C32B03 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF459155A00DC00C32B03 /* ModalViewController.m */; };
-		0FEDF45D155A017700C32B03 /* ModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF45C155A017700C32B03 /* ModalView.m */; };
+		0FEDF460155A0ADE00C32B03 /* StationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF45F155A0ADE00C32B03 /* StationViewController.m */; };
+		0FEDF463155A0B5E00C32B03 /* StationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF462155A0B5E00C32B03 /* StationView.m */; };
+		0FEDF466155A0BA000C32B03 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF465155A0BA000C32B03 /* InfoViewController.m */; };
+		0FEDF469155A0BF300C32B03 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF468155A0BF300C32B03 /* InfoView.m */; };
 		0FFA2004155557ED0084CC30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFA2003155557ED0084CC30 /* UIKit.framework */; };
 		0FFA2006155557ED0084CC30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFA2005155557ED0084CC30 /* Foundation.framework */; };
 		0FFA2008155557ED0084CC30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFA2007155557ED0084CC30 /* CoreGraphics.framework */; };
@@ -20,14 +20,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F72D43C1558C1F800ED228A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		0F72D43D1558C1F800ED228A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		0FEDF4541559FBEE00C32B03 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
-		0FEDF4551559FBEE00C32B03 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
-		0FEDF458155A00DC00C32B03 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
-		0FEDF459155A00DC00C32B03 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
-		0FEDF45B155A017700C32B03 /* ModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalView.h; sourceTree = "<group>"; };
-		0FEDF45C155A017700C32B03 /* ModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalView.m; sourceTree = "<group>"; };
+		0FEDF45E155A0ADE00C32B03 /* StationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationViewController.h; sourceTree = "<group>"; };
+		0FEDF45F155A0ADE00C32B03 /* StationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationViewController.m; sourceTree = "<group>"; };
+		0FEDF461155A0B5E00C32B03 /* StationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationView.h; sourceTree = "<group>"; };
+		0FEDF462155A0B5E00C32B03 /* StationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationView.m; sourceTree = "<group>"; };
+		0FEDF464155A0BA000C32B03 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		0FEDF465155A0BA000C32B03 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		0FEDF467155A0BF300C32B03 /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoView.h; sourceTree = "<group>"; };
+		0FEDF468155A0BF300C32B03 /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoView.m; sourceTree = "<group>"; };
 		0FFA1FFF155557ED0084CC30 /* May10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = May10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFA2003155557ED0084CC30 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0FFA2005155557ED0084CC30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,14 +86,14 @@
 			children = (
 				0FFA2012155557ED0084CC30 /* May10AppDelegate.h */,
 				0FFA2013155557ED0084CC30 /* May10AppDelegate.m */,
-				0F72D43C1558C1F800ED228A /* MainViewController.h */,
-				0F72D43D1558C1F800ED228A /* MainViewController.m */,
-				0FEDF4541559FBEE00C32B03 /* MainView.h */,
-				0FEDF4551559FBEE00C32B03 /* MainView.m */,
-				0FEDF458155A00DC00C32B03 /* ModalViewController.h */,
-				0FEDF459155A00DC00C32B03 /* ModalViewController.m */,
-				0FEDF45B155A017700C32B03 /* ModalView.h */,
-				0FEDF45C155A017700C32B03 /* ModalView.m */,
+				0FEDF45E155A0ADE00C32B03 /* StationViewController.h */,
+				0FEDF45F155A0ADE00C32B03 /* StationViewController.m */,
+				0FEDF461155A0B5E00C32B03 /* StationView.h */,
+				0FEDF462155A0B5E00C32B03 /* StationView.m */,
+				0FEDF464155A0BA000C32B03 /* InfoViewController.h */,
+				0FEDF465155A0BA000C32B03 /* InfoViewController.m */,
+				0FEDF467155A0BF300C32B03 /* InfoView.h */,
+				0FEDF468155A0BF300C32B03 /* InfoView.m */,
 				0FFA200A155557ED0084CC30 /* Supporting Files */,
 			);
 			path = May10;
@@ -174,10 +174,10 @@
 			files = (
 				0FFA2010155557ED0084CC30 /* main.m in Sources */,
 				0FFA2014155557ED0084CC30 /* May10AppDelegate.m in Sources */,
-				0F72D43E1558C1F800ED228A /* MainViewController.m in Sources */,
-				0FEDF4561559FBEE00C32B03 /* MainView.m in Sources */,
-				0FEDF45A155A00DC00C32B03 /* ModalViewController.m in Sources */,
-				0FEDF45D155A017700C32B03 /* ModalView.m in Sources */,
+				0FEDF460155A0ADE00C32B03 /* StationViewController.m in Sources */,
+				0FEDF463155A0B5E00C32B03 /* StationView.m in Sources */,
+				0FEDF466155A0BA000C32B03 /* InfoViewController.m in Sources */,
+				0FEDF469155A0BF300C32B03 /* InfoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

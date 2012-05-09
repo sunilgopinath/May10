@@ -1,5 +1,5 @@
 //
-//  ModalViewController.h
+//  StationViewController.h
 //  May10
 //
 //  Created by Sunil Gopinath on 5/8/12.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ModalViewController: UIViewController
+@interface StationViewController : UIViewController
 
-- (void) dismissModalViewController;
+- (id) initWithTitle: (NSString *) title;
 @end
