@@ -37,7 +37,7 @@
     theatreQuestions = [NSArray arrayWithObjects:
                  @"",
                  @"1. Who is your favourite musical character?",
-                 @"2. Which of the following two were your favourite movie adaptations?",
+                 @"2. Which of the following two was your favourite movie adaptations?",
                  @"3. Have you seen Spiderman turn off the dark?",
                  nil
                  ];
@@ -59,9 +59,9 @@
                       ];
     
     theatreResult = [NSArray arrayWithObjects:
-                       @"Your favourite musical is Avenue Q",
-                       @"Your favourite musical is Spring Awakening",
-                       @"Your favourite musical is Wicked",
+                       @"Survey says you would enjoy Avenue Q",
+                       @"Survey says you would enjoy Spring Awakening",
+                       @"Survey says you would enjoy Wicked",
                        nil
                        ];
     

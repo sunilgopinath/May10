@@ -33,7 +33,7 @@
 		label.backgroundColor = [UIColor clearColor];
 		label.font = font;
 		label.text = string;
-        label.textColor = [UIColor yellowColor];
+        label.textColor = [UIColor redColor];
 		[self addSubview: label];
     }
     return self;
