@@ -2,31 +2,35 @@
 //  MusicViewController.m
 //  May10
 //
-//  Created by Sunil Gopinath on 5/8/12.
+//  Created by Sunil Gopinath on 5/9/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "MusicViewController.h"
 #import "MusicView.h"
-
+#import "May10AppDelegate.h"
+#import "MusicAnswers.h"
 
 @implementation MusicViewController
 
 @synthesize text;
+@synthesize answer;
 
-/*
- - (id) initWithNibName: (NSString *) nibNameOrNil bundle: (NSBundle *) nibBundleOrNil
- {
- self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
- if (self) {
- // Custom initialization
- }
- return self;
- }
- */
+- (id) initWithNibName: (NSString *) nibNameOrNil bundle: (NSBundle *) nibBundleOrNil
+{
+	self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
+	if (self) {
+		// Custom initialization
+        
+	}
+	return self;
+}
+
 
 
 - (id) initWithText: (NSString *) t
+             answer: (NSString *) a
+              model: (MusicAnswers *) m
               title: (NSString *) title
               image: (UIImage *) image
               badge: (NSString *) badge {
@@ -34,12 +38,30 @@
 	self = [super initWithNibName: nil bundle: nil];
 	if (self != nil) {
 		self.title = title;
+        self.answer = a;
 		self.tabBarItem.image = image;
 		self.tabBarItem.badgeValue = badge;
 		self.text = t;		//text = [t copy];
+        //May10AppDelegate *applicationDelegate = [UIApplication sharedApplication].delegate;
+        
+		//Everey station except the easternmost one has a "Go East" button.
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle: @"Next Q"
+                                                                                  style: UIBarButtonItemStylePlain
+                                                                                 target: self
+                                                                                 action: @selector(nextQuestion)
+                                                  ];
+        UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Previous Q"
+                                                                       style:UIBarButtonItemStylePlain target:nil action:nil];
+        self.navigationItem.backBarButtonItem = backButton;
 	}
 	
 	return self;
+}
+
+- (void) nextQuestion {
+	UIApplication *application = [UIApplication sharedApplication];
+	May10AppDelegate *applicationDelegate = application.delegate;
+	[applicationDelegate nextStation];
 }
 
 
@@ -82,7 +104,6 @@
 	//return (interfaceOrientation == UIInterfaceOrientationPortrait);
 	return YES;
 }
-
 
 
 @end

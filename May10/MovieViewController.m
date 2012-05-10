@@ -2,12 +2,13 @@
 //  MovieViewController.m
 //  May10
 //
-//  Created by Sunil Gopinath on 5/8/12.
+//  Created by Sunil Gopinath on 5/9/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "MovieViewController.h"
 #import "MovieView.h"
+#import "HelpViewController.h"
 
 @implementation MovieViewController
 
@@ -38,6 +39,16 @@
 	}
 	
 	return self;
+}
+
+- (void) presentModalViewController {
+    HelpViewController *modalViewController =
+    [[HelpViewController alloc] initWithNibName: nil bundle: nil];
+    
+	UINavigationController *navigationController =
+    [[UINavigationController alloc] initWithRootViewController: modalViewController];
+    
+	[self presentModalViewController: navigationController animated: YES];
 }
 
 

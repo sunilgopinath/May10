@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F89B272155AB654001754A8 /* MusicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B271155AB654001754A8 /* MusicView.m */; };
-		0F89B276155AC440001754A8 /* TVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B275155AC440001754A8 /* TVViewController.m */; };
-		0F89B279155AC4A4001754A8 /* TVView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B278155AC4A4001754A8 /* TVView.m */; };
-		0F89B27C155AC53E001754A8 /* TheatreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B27B155AC53E001754A8 /* TheatreViewController.m */; };
-		0F89B27F155AC59B001754A8 /* TheatreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B27E155AC59B001754A8 /* TheatreView.m */; };
-		0F89B282155AC7DD001754A8 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B281155AC7DD001754A8 /* BookViewController.m */; };
-		0F89B285155AC85E001754A8 /* BookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89B284155AC85E001754A8 /* BookView.m */; };
+		0F456DC4155B466300B78C28 /* nedry.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0F456DC3155B466300B78C28 /* nedry.gif */; };
+		0F456DC9155B481600B78C28 /* correctamundo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F456DC8155B481600B78C28 /* correctamundo.jpg */; };
+		0F456DCE155B527900B78C28 /* MusicAnswers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F456DCD155B527900B78C28 /* MusicAnswers.m */; };
+		0F456DD0155B5CFC00B78C28 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F456DCF155B5CFC00B78C28 /* MediaPlayer.framework */; };
+		0F456DD3155B5DF100B78C28 /* TheatreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F456DD2155B5DF100B78C28 /* TheatreViewController.m */; };
+		0F456DD6155B5E9200B78C28 /* TheatreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F456DD5155B5E9100B78C28 /* TheatreView.m */; };
+		0F456DDC155B739F00B78C28 /* TheatreResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F456DDB155B739F00B78C28 /* TheatreResultView.m */; };
+		0F456DDE155B75C700B78C28 /* avenueq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F456DDD155B75C700B78C28 /* avenueq.jpg */; };
+		0F456DE1155B7EE100B78C28 /* spring-awakening.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F456DDF155B7EE100B78C28 /* spring-awakening.jpg */; };
+		0F456DE2155B7EE100B78C28 /* wicked.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F456DE0155B7EE100B78C28 /* wicked.jpg */; };
+		0F456DE4155B830D00B78C28 /* philadelphia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F456DE3155B830D00B78C28 /* philadelphia.jpg */; };
+		0F456DE7155B848100B78C28 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F456DE6155B848100B78C28 /* HelpViewController.m */; };
+		0F456DEA155B84D100B78C28 /* HelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F456DE9155B84D000B78C28 /* HelpView.m */; };
+		0F456DEC155B8B8500B78C28 /* quiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F456DEB155B8B8500B78C28 /* quiz.png */; };
 		0F89B28D155ACB71001754A8 /* movies.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F89B28C155ACB71001754A8 /* movies.png */; };
 		0F89B28F155ACBA5001754A8 /* tv.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F89B28E155ACBA5001754A8 /* tv.png */; };
 		0F89B291155ACBDA001754A8 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F89B290155ACBDA001754A8 /* music.png */; };
 		0F89B293155ACC12001754A8 /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F89B292155ACC12001754A8 /* book.png */; };
 		0F89B299155ACD24001754A8 /* theatre.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F89B298155ACD24001754A8 /* theatre.png */; };
-		0FEDF46C155A125300C32B03 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF46B155A125300C32B03 /* QuizViewController.m */; };
-		0FEDF46F155A12E500C32B03 /* MovieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF46E155A12E500C32B03 /* MovieView.m */; };
-		0FEDF472155A13FB00C32B03 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF471155A13FB00C32B03 /* MovieViewController.m */; };
-		0FEDF475155A1B4D00C32B03 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEDF474155A1B4D00C32B03 /* MusicViewController.m */; };
+		0FF8E49E155B0CC3002C37A3 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8E49D155B0CC3002C37A3 /* MovieViewController.m */; };
+		0FF8E4A1155B0D91002C37A3 /* MovieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8E4A0155B0D91002C37A3 /* MovieView.m */; };
+		0FF8E4A4155B0F8F002C37A3 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8E4A3155B0F8F002C37A3 /* MusicViewController.m */; };
+		0FF8E4A7155B0FE2002C37A3 /* MusicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8E4A6155B0FE2002C37A3 /* MusicView.m */; };
+		0FF8E4AA155B23FD002C37A3 /* MusicAnswerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8E4A9155B23FD002C37A3 /* MusicAnswerView.m */; };
 		0FFA2004155557ED0084CC30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFA2003155557ED0084CC30 /* UIKit.framework */; };
 		0FFA2006155557ED0084CC30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFA2005155557ED0084CC30 /* Foundation.framework */; };
 		0FFA2008155557ED0084CC30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFA2007155557ED0084CC30 /* CoreGraphics.framework */; };
@@ -32,33 +40,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F89B270155AB654001754A8 /* MusicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicView.h; sourceTree = "<group>"; };
-		0F89B271155AB654001754A8 /* MusicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicView.m; sourceTree = "<group>"; };
-		0F89B274155AC440001754A8 /* TVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVViewController.h; sourceTree = "<group>"; };
-		0F89B275155AC440001754A8 /* TVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVViewController.m; sourceTree = "<group>"; };
-		0F89B277155AC4A4001754A8 /* TVView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVView.h; sourceTree = "<group>"; };
-		0F89B278155AC4A4001754A8 /* TVView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVView.m; sourceTree = "<group>"; };
-		0F89B27A155AC53E001754A8 /* TheatreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheatreViewController.h; sourceTree = "<group>"; };
-		0F89B27B155AC53E001754A8 /* TheatreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreViewController.m; sourceTree = "<group>"; };
-		0F89B27D155AC59B001754A8 /* TheatreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheatreView.h; sourceTree = "<group>"; };
-		0F89B27E155AC59B001754A8 /* TheatreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreView.m; sourceTree = "<group>"; };
-		0F89B280155AC7DD001754A8 /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
-		0F89B281155AC7DD001754A8 /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
-		0F89B283155AC85E001754A8 /* BookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookView.h; sourceTree = "<group>"; };
-		0F89B284155AC85E001754A8 /* BookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookView.m; sourceTree = "<group>"; };
+		0F456DC3155B466300B78C28 /* nedry.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = nedry.gif; sourceTree = SOURCE_ROOT; };
+		0F456DC8155B481600B78C28 /* correctamundo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = correctamundo.jpg; sourceTree = SOURCE_ROOT; };
+		0F456DCC155B527900B78C28 /* MusicAnswers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicAnswers.h; sourceTree = "<group>"; };
+		0F456DCD155B527900B78C28 /* MusicAnswers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicAnswers.m; sourceTree = "<group>"; };
+		0F456DCF155B5CFC00B78C28 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0F456DD1155B5DF100B78C28 /* TheatreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheatreViewController.h; sourceTree = "<group>"; };
+		0F456DD2155B5DF100B78C28 /* TheatreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreViewController.m; sourceTree = "<group>"; };
+		0F456DD4155B5E9100B78C28 /* TheatreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheatreView.h; sourceTree = "<group>"; };
+		0F456DD5155B5E9100B78C28 /* TheatreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreView.m; sourceTree = "<group>"; };
+		0F456DDA155B739E00B78C28 /* TheatreResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheatreResultView.h; sourceTree = "<group>"; };
+		0F456DDB155B739F00B78C28 /* TheatreResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreResultView.m; sourceTree = "<group>"; };
+		0F456DDD155B75C700B78C28 /* avenueq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avenueq.jpg; sourceTree = SOURCE_ROOT; };
+		0F456DDF155B7EE100B78C28 /* spring-awakening.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "spring-awakening.jpg"; sourceTree = SOURCE_ROOT; };
+		0F456DE0155B7EE100B78C28 /* wicked.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wicked.jpg; sourceTree = SOURCE_ROOT; };
+		0F456DE3155B830D00B78C28 /* philadelphia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = philadelphia.jpg; sourceTree = SOURCE_ROOT; };
+		0F456DE5155B848100B78C28 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		0F456DE6155B848100B78C28 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		0F456DE8155B84D000B78C28 /* HelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpView.h; sourceTree = "<group>"; };
+		0F456DE9155B84D000B78C28 /* HelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpView.m; sourceTree = "<group>"; };
+		0F456DEB155B8B8500B78C28 /* quiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quiz.png; sourceTree = SOURCE_ROOT; };
 		0F89B28C155ACB71001754A8 /* movies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movies.png; sourceTree = SOURCE_ROOT; };
 		0F89B28E155ACBA5001754A8 /* tv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tv.png; sourceTree = SOURCE_ROOT; };
 		0F89B290155ACBDA001754A8 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = SOURCE_ROOT; };
 		0F89B292155ACC12001754A8 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = SOURCE_ROOT; };
 		0F89B298155ACD24001754A8 /* theatre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theatre.png; sourceTree = SOURCE_ROOT; };
-		0FEDF46A155A125300C32B03 /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
-		0FEDF46B155A125300C32B03 /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
-		0FEDF46D155A12E500C32B03 /* MovieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieView.h; sourceTree = "<group>"; };
-		0FEDF46E155A12E500C32B03 /* MovieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieView.m; sourceTree = "<group>"; };
-		0FEDF470155A13FB00C32B03 /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
-		0FEDF471155A13FB00C32B03 /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
-		0FEDF473155A1B4D00C32B03 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
-		0FEDF474155A1B4D00C32B03 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		0FF8E49C155B0CC3002C37A3 /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		0FF8E49D155B0CC3002C37A3 /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
+		0FF8E49F155B0D91002C37A3 /* MovieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieView.h; sourceTree = "<group>"; };
+		0FF8E4A0155B0D91002C37A3 /* MovieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieView.m; sourceTree = "<group>"; };
+		0FF8E4A2155B0F8F002C37A3 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		0FF8E4A3155B0F8F002C37A3 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		0FF8E4A5155B0FE2002C37A3 /* MusicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicView.h; sourceTree = "<group>"; };
+		0FF8E4A6155B0FE2002C37A3 /* MusicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicView.m; sourceTree = "<group>"; };
+		0FF8E4A8155B23FD002C37A3 /* MusicAnswerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicAnswerView.h; sourceTree = "<group>"; };
+		0FF8E4A9155B23FD002C37A3 /* MusicAnswerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicAnswerView.m; sourceTree = "<group>"; };
 		0FFA1FFF155557ED0084CC30 /* May10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = May10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFA2003155557ED0084CC30 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0FFA2005155557ED0084CC30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -76,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F456DD0155B5CFC00B78C28 /* MediaPlayer.framework in Frameworks */,
 				0FFA2004155557ED0084CC30 /* UIKit.framework in Frameworks */,
 				0FFA2006155557ED0084CC30 /* Foundation.framework in Frameworks */,
 				0FFA2008155557ED0084CC30 /* CoreGraphics.framework in Frameworks */,
@@ -105,6 +122,7 @@
 		0FFA2002155557ED0084CC30 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F456DCF155B5CFC00B78C28 /* MediaPlayer.framework */,
 				0FFA2003155557ED0084CC30 /* UIKit.framework */,
 				0FFA2005155557ED0084CC30 /* Foundation.framework */,
 				0FFA2007155557ED0084CC30 /* CoreGraphics.framework */,
@@ -117,28 +135,28 @@
 			children = (
 				0FFA2012155557ED0084CC30 /* May10AppDelegate.h */,
 				0FFA2013155557ED0084CC30 /* May10AppDelegate.m */,
-				0FEDF46A155A125300C32B03 /* QuizViewController.h */,
-				0FEDF46B155A125300C32B03 /* QuizViewController.m */,
-				0FEDF470155A13FB00C32B03 /* MovieViewController.h */,
-				0FEDF471155A13FB00C32B03 /* MovieViewController.m */,
-				0FEDF473155A1B4D00C32B03 /* MusicViewController.h */,
-				0FEDF474155A1B4D00C32B03 /* MusicViewController.m */,
-				0F89B274155AC440001754A8 /* TVViewController.h */,
-				0F89B275155AC440001754A8 /* TVViewController.m */,
-				0F89B280155AC7DD001754A8 /* BookViewController.h */,
-				0F89B281155AC7DD001754A8 /* BookViewController.m */,
-				0F89B27A155AC53E001754A8 /* TheatreViewController.h */,
-				0F89B27B155AC53E001754A8 /* TheatreViewController.m */,
-				0FEDF46D155A12E500C32B03 /* MovieView.h */,
-				0FEDF46E155A12E500C32B03 /* MovieView.m */,
-				0F89B270155AB654001754A8 /* MusicView.h */,
-				0F89B271155AB654001754A8 /* MusicView.m */,
-				0F89B277155AC4A4001754A8 /* TVView.h */,
-				0F89B278155AC4A4001754A8 /* TVView.m */,
-				0F89B27D155AC59B001754A8 /* TheatreView.h */,
-				0F89B27E155AC59B001754A8 /* TheatreView.m */,
-				0F89B283155AC85E001754A8 /* BookView.h */,
-				0F89B284155AC85E001754A8 /* BookView.m */,
+				0FF8E49C155B0CC3002C37A3 /* MovieViewController.h */,
+				0FF8E49D155B0CC3002C37A3 /* MovieViewController.m */,
+				0FF8E49F155B0D91002C37A3 /* MovieView.h */,
+				0FF8E4A0155B0D91002C37A3 /* MovieView.m */,
+				0F456DE5155B848100B78C28 /* HelpViewController.h */,
+				0F456DE6155B848100B78C28 /* HelpViewController.m */,
+				0F456DE8155B84D000B78C28 /* HelpView.h */,
+				0F456DE9155B84D000B78C28 /* HelpView.m */,
+				0FF8E4A2155B0F8F002C37A3 /* MusicViewController.h */,
+				0FF8E4A3155B0F8F002C37A3 /* MusicViewController.m */,
+				0FF8E4A5155B0FE2002C37A3 /* MusicView.h */,
+				0FF8E4A6155B0FE2002C37A3 /* MusicView.m */,
+				0FF8E4A8155B23FD002C37A3 /* MusicAnswerView.h */,
+				0FF8E4A9155B23FD002C37A3 /* MusicAnswerView.m */,
+				0F456DCC155B527900B78C28 /* MusicAnswers.h */,
+				0F456DCD155B527900B78C28 /* MusicAnswers.m */,
+				0F456DD1155B5DF100B78C28 /* TheatreViewController.h */,
+				0F456DD2155B5DF100B78C28 /* TheatreViewController.m */,
+				0F456DD4155B5E9100B78C28 /* TheatreView.h */,
+				0F456DD5155B5E9100B78C28 /* TheatreView.m */,
+				0F456DDA155B739E00B78C28 /* TheatreResultView.h */,
+				0F456DDB155B739F00B78C28 /* TheatreResultView.m */,
 				0FFA200A155557ED0084CC30 /* Supporting Files */,
 			);
 			path = May10;
@@ -147,6 +165,13 @@
 		0FFA200A155557ED0084CC30 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0F456DEB155B8B8500B78C28 /* quiz.png */,
+				0F456DE3155B830D00B78C28 /* philadelphia.jpg */,
+				0F456DDF155B7EE100B78C28 /* spring-awakening.jpg */,
+				0F456DE0155B7EE100B78C28 /* wicked.jpg */,
+				0F456DDD155B75C700B78C28 /* avenueq.jpg */,
+				0F456DC8155B481600B78C28 /* correctamundo.jpg */,
+				0F456DC3155B466300B78C28 /* nedry.gif */,
 				0F89B298155ACD24001754A8 /* theatre.png */,
 				0F89B292155ACC12001754A8 /* book.png */,
 				0F89B290155ACBDA001754A8 /* music.png */,
@@ -217,6 +242,13 @@
 				0F89B291155ACBDA001754A8 /* music.png in Resources */,
 				0F89B293155ACC12001754A8 /* book.png in Resources */,
 				0F89B299155ACD24001754A8 /* theatre.png in Resources */,
+				0F456DC4155B466300B78C28 /* nedry.gif in Resources */,
+				0F456DC9155B481600B78C28 /* correctamundo.jpg in Resources */,
+				0F456DDE155B75C700B78C28 /* avenueq.jpg in Resources */,
+				0F456DE1155B7EE100B78C28 /* spring-awakening.jpg in Resources */,
+				0F456DE2155B7EE100B78C28 /* wicked.jpg in Resources */,
+				0F456DE4155B830D00B78C28 /* philadelphia.jpg in Resources */,
+				0F456DEC155B8B8500B78C28 /* quiz.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,17 +261,17 @@
 			files = (
 				0FFA2010155557ED0084CC30 /* main.m in Sources */,
 				0FFA2014155557ED0084CC30 /* May10AppDelegate.m in Sources */,
-				0FEDF46C155A125300C32B03 /* QuizViewController.m in Sources */,
-				0FEDF46F155A12E500C32B03 /* MovieView.m in Sources */,
-				0FEDF472155A13FB00C32B03 /* MovieViewController.m in Sources */,
-				0FEDF475155A1B4D00C32B03 /* MusicViewController.m in Sources */,
-				0F89B272155AB654001754A8 /* MusicView.m in Sources */,
-				0F89B276155AC440001754A8 /* TVViewController.m in Sources */,
-				0F89B279155AC4A4001754A8 /* TVView.m in Sources */,
-				0F89B27C155AC53E001754A8 /* TheatreViewController.m in Sources */,
-				0F89B27F155AC59B001754A8 /* TheatreView.m in Sources */,
-				0F89B282155AC7DD001754A8 /* BookViewController.m in Sources */,
-				0F89B285155AC85E001754A8 /* BookView.m in Sources */,
+				0FF8E49E155B0CC3002C37A3 /* MovieViewController.m in Sources */,
+				0FF8E4A1155B0D91002C37A3 /* MovieView.m in Sources */,
+				0FF8E4A4155B0F8F002C37A3 /* MusicViewController.m in Sources */,
+				0FF8E4A7155B0FE2002C37A3 /* MusicView.m in Sources */,
+				0FF8E4AA155B23FD002C37A3 /* MusicAnswerView.m in Sources */,
+				0F456DCE155B527900B78C28 /* MusicAnswers.m in Sources */,
+				0F456DD3155B5DF100B78C28 /* TheatreViewController.m in Sources */,
+				0F456DD6155B5E9200B78C28 /* TheatreView.m in Sources */,
+				0F456DDC155B739F00B78C28 /* TheatreResultView.m in Sources */,
+				0F456DE7155B848100B78C28 /* HelpViewController.m in Sources */,
+				0F456DEA155B84D100B78C28 /* HelpView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

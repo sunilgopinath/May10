@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 @class MusicViewController;
+@class MusicAnswerView;
 
 @interface MusicView : UITextView {
 	MusicViewController *viewController;
+    MusicAnswerView *answerView;
 }
 
 - (id) initWithFrame: (CGRect) frame controller: (MusicViewController *) c;

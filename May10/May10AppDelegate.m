@@ -7,11 +7,10 @@
 //
 
 #import "May10AppDelegate.h"
-#import "QuizViewController.h"
 #import "MovieViewController.h"
 #import "MusicViewController.h"
-#import "TVViewController.h"
-#import "BookViewController.h"
+#import "MusicAnswers.h"
+
 #import "TheatreViewController.h"
 
 @implementation May10AppDelegate
@@ -20,47 +19,70 @@
 
 - (BOOL) application: (UIApplication *) application didFinishLaunchingWithOptions: (NSDictionary *) launchOptions
 {
-	self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
+
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
 	// Override point for customization after application launch.
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
+    model = [[MusicAnswers alloc] init];
+    //Setting up the tabs
+    MovieViewController *movieViewController1 = [[MovieViewController alloc]
+                                                 initWithText: @"Can you identify this image?"	//apostophe, not prime
+                                                 title: @"Movies"
+                                                 image: [UIImage imageNamed: @"movies.png"]
+                                                 badge: nil
+                                                 ];
+    
+    TheatreViewController *theatreViewController = [[TheatreViewController alloc]
+                                                 initWithText: @"Take the theatre personality quiz"
+                                                 title: @"Theatre"
+                                                 answerA: [model.theatreAnswersA objectAtIndex:0]
+                                                 answerB: [model.theatreAnswersB objectAtIndex:0]
+                                                 model: model
+                                                 image: [UIImage imageNamed: @"theatre.png"]
+                                                 badge: nil
+                                                 ];
+    /*
+    MovieViewController *movieViewController3 = [[MovieViewController alloc]
+                                                 initWithText: @"Have you been watching tv?"
+                                                 title: @"TV"
+                                                 image: [UIImage imageNamed: @"tv.png"]
+                                                 badge: nil
+                                                 ];
+    
+    MovieViewController *movieViewController4 = [[MovieViewController alloc]
+                                                 initWithText: @"What about a good book? On an eReader of course!"
+                                                 title: @"Books"
+                                                 image: [UIImage imageNamed: @"book.png"]
+                                                 badge: nil
+                                                ];
+    */
+    MusicViewController *musicViewController = [[MusicViewController alloc]
+                                                initWithText:[model.questions objectAtIndex:0]
+                                                answer:[model.answers objectAtIndex: 0]
+                                                model:model
+                                                title:@"Music"
+                                                image:[UIImage imageNamed: @"music.png"] 
+                                                badge:nil
+                                                ];
+    
+    navController = [[UINavigationController alloc]
+                                             initWithRootViewController:musicViewController];
+    
+    theatreNavController = [[UINavigationController alloc]
+                     initWithRootViewController:theatreViewController];
+
+    
+    visited = [NSMutableArray arrayWithObject: musicViewController];
+    theatreVisited = [NSMutableArray arrayWithObject: theatreNavController];
+    
+    
 	tabBarController.viewControllers = [NSArray arrayWithObjects:
-                                        
-                                        [[MovieViewController alloc]
-                                         initWithText: @"Test your week's Movie Knowledge!"	//apostophe, not prime
-                                         title: @"Movies"
-                                         image: [UIImage imageNamed: @"movies.png"]
-                                         badge: nil
-                                         ],
-                                        
-                                        [[MusicViewController alloc]
-                                         initWithText: @"How much about this week's music do you know?"
-                                         title: @"Music"
-                                         image: [UIImage imageNamed: @"music.png"]
-                                         badge: nil
-                                         ],
-                                        
-                                        [[TVViewController alloc]
-                                         initWithText: @"Have you been watching tv?"
-                                         title: @"TV"
-                                         image: [UIImage imageNamed: @"tv.png"]
-                                         badge: nil
-                                         ],
-                                        
-                                        [[BookViewController alloc]
-                                         initWithText: @"What about a good book? On an eReader of course!"
-                                         title: @"Books"
-                                         image: [UIImage imageNamed: @"book.png"]
-                                         badge: nil
-                                         ],
-                                        
-                                        [[TheatreViewController alloc]
-                                         initWithText: @"There's more to art than Broadway"
-                                         title: @"Theatre"
-                                         image: [UIImage imageNamed: @"theatre.png"]
-                                         badge: nil
-                                         ],
-                                        
+                                        movieViewController1,
+                                        theatreNavController,
+                                        navController,
                                         nil
                                         ];
     
@@ -69,6 +91,74 @@
 	[self.window makeKeyAndVisible];
 	return YES;
 }
+
+//Called when user touches a View.
+
+- (void) nextStation {
+    
+	UINavigationController *navigationController = navController;
+    
+	NSUInteger i = navigationController.viewControllers.count;
+	if (i == model.questions.count) {
+		//We are currently visiting the last station, and can go no further.
+		return;
+	}
+    
+	if (visited.count <= i) {
+		//This station is being visited for the first time.
+		[visited addObject:
+         [[MusicViewController alloc]
+          initWithText:[model.questions objectAtIndex:i]
+          answer:[model.answers objectAtIndex: i]
+          model:model
+          title:@"Music"
+          image:[UIImage imageNamed: @"music.png"] 
+          badge:nil
+          ]
+         ];
+	}
+	
+	[navigationController pushViewController: [visited objectAtIndex: i] animated: YES];
+}
+
+- (void) nextTheatreQuestion {
+    
+	UINavigationController *navigationController = theatreNavController;
+    
+	NSUInteger i = navigationController.viewControllers.count;
+	if (i == model.theatreQuestions.count) {
+		[visited addObject:
+         [[TheatreViewController alloc]
+          initWithText: @""
+          title: @"Result"
+          answerA: @""
+          answerB: @""
+          model: model
+          image: [UIImage imageNamed: @"theatre.png"]
+          badge: nil
+          ]
+         ];
+
+	}
+    
+	if (visited.count <= i) {
+		//This station is being visited for the first time.
+		[visited addObject:
+         [[TheatreViewController alloc]
+          initWithText: [model.theatreQuestions objectAtIndex:i]
+          title: @"Theatre"
+          answerA: [model.theatreAnswersA objectAtIndex:i]
+          answerB: [model.theatreAnswersB objectAtIndex:i]
+          model: model
+          image: [UIImage imageNamed: @"theatre.png"]
+          badge: nil
+          ]
+         ];
+	}
+	
+	[navigationController pushViewController: [visited objectAtIndex: i] animated: YES];
+}
+
 
 - (void) applicationWillResignActive: (UIApplication *) application
 {

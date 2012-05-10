@@ -8,11 +8,15 @@
 
 #import "TheatreViewController.h"
 #import "TheatreView.h"
+#import "May10AppDelegate.h"
 
 
 @implementation TheatreViewController
 
 @synthesize text;
+@synthesize answerA;
+@synthesize answerB;
+@synthesize model;
 /*
  - (id) initWithNibName: (NSString *) nibNameOrNil bundle: (NSBundle *) nibBundleOrNil
  {
@@ -27,6 +31,9 @@
 
 - (id) initWithText: (NSString *) t
               title: (NSString *) title
+            answerA: (NSString *) a
+            answerB: (NSString *) b
+              model: (MusicAnswers *) m
               image: (UIImage *) image
               badge: (NSString *) badge {
     
@@ -36,6 +43,9 @@
 		self.tabBarItem.image = image;
 		self.tabBarItem.badgeValue = badge;
 		self.text = t;		//text = [t copy];
+        self.answerA = a;
+        self.answerB = b;
+        self.model = m;
 	}
 	
 	return self;
@@ -52,6 +62,11 @@
 
 #pragma mark - View lifecycle
 
+- (void) touchUpInside:(id)sender {
+   	UIApplication *application = [UIApplication sharedApplication];
+	May10AppDelegate *applicationDelegate = application.delegate;
+	[applicationDelegate nextTheatreQuestion];
+}
 
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void) loadView

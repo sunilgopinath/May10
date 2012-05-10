@@ -8,13 +8,17 @@
 
 #import <UIKit/UIKit.h>
 @class TheatreViewController;
+@class TheatreResultView;
 
 @interface TheatreView : UITextView {
 	TheatreViewController *viewController;
+    UIButton *buttonA;
+    UIButton *buttonB;
+    UIButton *letsGo;
+    
+    TheatreResultView *littleView;
 }
 
 - (id) initWithFrame: (CGRect) frame controller: (TheatreViewController *) c;
-
-
 
 @end
